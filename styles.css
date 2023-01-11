@@ -12,6 +12,8 @@
 body {
   font-family: "Work Sans";
   font-size: 1.3rem;
+}
+body a {
   text-decoration: none;
 }
 
@@ -38,10 +40,22 @@ header nav {
   margin-right: 50px;
   display: flex;
 }
+header nav .hamburger {
+  display: none;
+}
+header nav .hamburger span {
+  display: block;
+  height: 5px;
+  width: 20px;
+  margin: 5px auto;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
 header nav ul {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
+  background-color: white;
 }
 header nav ul li {
   list-style: none;
@@ -159,4 +173,22 @@ main .button img {
   display: flex;
   justify-content: center;
   color: gray;
+}
+
+@media only screen and (max-width: 768px) {
+  header nav ul {
+    position: fixed;
+    left: 100%;
+    top: 6rem;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  header nav .hamburger {
+    display: block;
+  }
+  .navMenu.active {
+    left: 0;
+  }
 }
