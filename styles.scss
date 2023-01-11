@@ -1,17 +1,58 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import "reset";
+@import "mixins";
+
+@mixin article-style {
+    height: 45rem;
+    width: 35rem;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+}
+
+@mixin card-head {
+    padding: 3rem;
+    margin: 2rem;
+    text-shadow: -5px 0px 10px black;
+}
+
+@mixin card-img {
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.242);
+    height: 3rem;
+    margin-left: 6.5rem;
+
+}
+
+
+
+
+:root {
+    font-size: 10px;
+}
+
+body {
     font-family: "Work Sans";
+    font-size: 1.3rem;
+    text-decoration: none;
 }
 
 // navbar
 header {
-    width: 100%;
-    height: 5vh;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 3rem;
+    font-size: 1.7rem;
     display: flex;
     justify-content: space-between;
 
     div{
         width: 40%;
         height: auto;
+        gap: 1.2rem;
         display: flex;
         align-items: center;
         
@@ -21,11 +62,7 @@ header {
         
         height: 1.5rem;
     }
-    p {
-        width: 20%;
-        margin-left: 5px;
-       
-    }
+
         }
 
     nav {
@@ -44,14 +81,7 @@ header {
                 list-style: none;
                 color: purple;
                 font-style:initial;
-                
-                    
-                    a {
-                    text-decoration: none;
-                    
-        
-                    }  
-                }
+              }
               
     }
   
@@ -59,99 +89,105 @@ header {
 }
 // navbar end
 
-// Headlines
+// main
 
-h1 {
-    margin-left: 20px;
-    
+main {
+    max-width: 100rem;
+    min-height: 85vh;
+    margin: 0;
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        h1 {
+            margin-bottom: 1.8rem;
+           }
+           .intro {
+            font-size: 1.5rem;
+            font-weight: 100;
+           }
     }
 
-h2 {
-    margin-left: 20px;
-   
-    font-size: medium;
-}
+
 
 //Button ==> Watch Story Video
 
-.all-in{
-    margin-top: 10px;
-    margin-left: 20px;
-    width: 180px;
-    height: 30px;
-    background-color: black;
+ 
+  .button{  
+        margin: 5px;
+        color: white;
+        background-color: black;
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+
     
     img {
-        width: 25px;
-        position: relative;
-        top: 5px;
+        height: 30px;
     }
-    a{
-        color: white;
-        text-decoration: none;
-        position: relative;
-        bottom: 3px;
-        margin-left: 5px;
-    }
+}
 }
 
 
 //cards
-.cards>a{
-    color: lightgray;
-    text-shadow: 1px 1px gray;
-    text-decoration: none;
-    
-}
+
 .cards {
-    margin: 20px;
-    width: 100%;
+    padding: 3rem;
     display: flex;
-    gap: 10px;
-
-
-     .article-1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:3rem;
     
-        img:first-child{
-            width: 380px;
-            height: 400px;
-    }
-    img:last-child{
-        width: 25px;
-        background-color: whitesmoke;
-        border: 2px solid lightgray;
-        border-radius: 50%;
-    }
-}
-    .article-2 {
+    .article-1 {
+        @include article-style();
+        background-image: url(./images/white-box.jpg);
 
-        img:first-child{
-            width: 380px;
-            height: 400px;
-    }
-    img:last-child{
-        width: 25px;
-        background-color: whitesmoke;
-        border: 2px solid lightgray;
-        border-radius: 50%;
-    }
         
-}
-    .article-3 {
-        img:first-child{
-            width: 380px;
-            height: 400px;
     }
-    img:last-child{
-        width: 25px;
-        background-color: whitesmoke;
-        border: 2px solid lightgray;
-        border-radius: 50%;
-    }   
+    h2 {
+        @include card-head;
+    }
+    img {
+        @include card-img();
+    }
+     .article-2 {
+    
+        @include article-style();
+        background-image: url(./images/room.jpg);
+      
+
+        h2 {
+            @include card-head;
+        }
+
+        img {
+            @include card-img();
+        }
+    
+    }
+   
+
+    
+
+    .article-3 {
+        @include article-style();
+        background-image: url(./images/black-white.jpg);
+        
+        h2 {
+            @include card-head;
+        }
+        img {
+            @include card-img();
+        }
+       
 
 }
 
-}
+
 
 //cards noch nicht fix
 
@@ -165,3 +201,4 @@ footer {
 
 }
 
+}

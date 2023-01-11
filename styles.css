@@ -1,25 +1,37 @@
-html {
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
   font-family: "Work Sans";
+  font-size: 1.3rem;
+  text-decoration: none;
 }
 
 header {
-  width: 100%;
-  height: 5vh;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 3rem;
+  font-size: 1.7rem;
   display: flex;
   justify-content: space-between;
 }
 header div {
   width: 40%;
   height: auto;
+  gap: 1.2rem;
   display: flex;
   align-items: center;
 }
 header div img {
   height: 1.5rem;
-}
-header div p {
-  width: 20%;
-  margin-left: 5px;
 }
 header nav {
   height: 5vh;
@@ -36,83 +48,113 @@ header nav ul li {
   color: purple;
   font-style: initial;
 }
-header nav ul li a {
-  text-decoration: none;
-}
 
-h1 {
-  margin-left: 20px;
+main {
+  max-width: 100rem;
+  min-height: 85vh;
+  margin: 0;
 }
-
-h2 {
-  margin-left: 20px;
-  font-size: medium;
+main .hero {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
 }
-
-.all-in {
-  margin-top: 10px;
-  margin-left: 20px;
-  width: 180px;
-  height: 30px;
-  background-color: black;
+main .hero h1 {
+  margin-bottom: 1.8rem;
 }
-.all-in img {
-  width: 25px;
-  position: relative;
-  top: 5px;
+main .hero .intro {
+  font-size: 1.5rem;
+  font-weight: 100;
 }
-.all-in a {
+main .button {
+  margin: 5px;
   color: white;
-  text-decoration: none;
-  position: relative;
-  bottom: 3px;
-  margin-left: 5px;
+  background-color: black;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
-
-.cards > a {
-  color: lightgray;
-  text-shadow: 1px 1px gray;
-  text-decoration: none;
+main .button img {
+  height: 30px;
 }
 
 .cards {
-  margin: 20px;
-  width: 100%;
+  padding: 3rem;
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
 }
-.cards .article-1 img:first-child {
-  width: 380px;
-  height: 400px;
+.cards .article-1 {
+  height: 45rem;
+  width: 35rem;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+  background-image: url(./images/white-box.jpg);
 }
-.cards .article-1 img:last-child {
-  width: 25px;
-  background-color: whitesmoke;
-  border: 2px solid lightgray;
+.cards h2 {
+  padding: 3rem;
+  margin: 2rem;
+  text-shadow: -5px 0px 10px black;
+}
+.cards img {
+  background-color: white;
   border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.242);
+  height: 3rem;
+  margin-left: 6.5rem;
 }
-.cards .article-2 img:first-child {
-  width: 380px;
-  height: 400px;
+.cards .article-2 {
+  height: 45rem;
+  width: 35rem;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+  background-image: url(./images/room.jpg);
 }
-.cards .article-2 img:last-child {
-  width: 25px;
-  background-color: whitesmoke;
-  border: 2px solid lightgray;
+.cards .article-2 h2 {
+  padding: 3rem;
+  margin: 2rem;
+  text-shadow: -5px 0px 10px black;
+}
+.cards .article-2 img {
+  background-color: white;
   border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.242);
+  height: 3rem;
+  margin-left: 6.5rem;
 }
-.cards .article-3 img:first-child {
-  width: 380px;
-  height: 400px;
+.cards .article-3 {
+  height: 45rem;
+  width: 35rem;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+  background-image: url(./images/black-white.jpg);
 }
-.cards .article-3 img:last-child {
-  width: 25px;
-  background-color: whitesmoke;
-  border: 2px solid lightgray;
+.cards .article-3 h2 {
+  padding: 3rem;
+  margin: 2rem;
+  text-shadow: -5px 0px 10px black;
+}
+.cards .article-3 img {
+  background-color: white;
   border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.242);
+  height: 3rem;
+  margin-left: 6.5rem;
 }
-
-footer {
+.cards footer {
   width: 70%;
   display: flex;
   justify-content: center;
