@@ -1,0 +1,167 @@
+html {
+    font-family: "Work Sans";
+}
+
+// navbar
+header {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+
+    div{
+        width: 40%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        
+       
+    
+    img {
+        
+        height: 1.5rem;
+    }
+    p {
+        width: 20%;
+        margin-left: 5px;
+       
+    }
+        }
+
+    nav {
+        height: 5vh;
+        margin-right: 50px;
+        display: flex;
+        
+       
+        ul{
+            display: flex;
+            justify-content: space-between;
+            gap: 1.5rem;
+            
+
+            li {
+                list-style: none;
+                color: purple;
+                font-style:initial;
+                
+                    
+                    a {
+                    text-decoration: none;
+                    
+        
+                    }  
+                }
+              
+    }
+  
+ }
+}
+// navbar end
+
+// Headlines
+
+h1 {
+    margin-left: 20px;
+    
+    }
+
+h2 {
+    margin-left: 20px;
+   
+    font-size: medium;
+}
+
+//Button ==> Watch Story Video
+
+.all-in{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 180px;
+    height: 30px;
+    background-color: black;
+    
+    img {
+        width: 25px;
+        position: relative;
+        top: 5px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        position: relative;
+        bottom: 3px;
+        margin-left: 5px;
+    }
+}
+
+
+//cards
+.cards>a{
+    color: lightgray;
+    text-shadow: 1px 1px gray;
+    text-decoration: none;
+    
+}
+.cards {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+
+
+     .article-1 {
+    
+        img:first-child{
+            width: 380px;
+            height: 400px;
+    }
+    img:last-child{
+        width: 25px;
+        background-color: whitesmoke;
+        border: 2px solid lightgray;
+        border-radius: 50%;
+    }
+}
+    .article-2 {
+
+        img:first-child{
+            width: 380px;
+            height: 400px;
+    }
+    img:last-child{
+        width: 25px;
+        background-color: whitesmoke;
+        border: 2px solid lightgray;
+        border-radius: 50%;
+    }
+        
+}
+    .article-3 {
+        img:first-child{
+            width: 380px;
+            height: 400px;
+    }
+    img:last-child{
+        width: 25px;
+        background-color: whitesmoke;
+        border: 2px solid lightgray;
+        border-radius: 50%;
+    }   
+
+}
+
+}
+
+//cards noch nicht fix
+
+//All rights
+
+footer {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    color: gray;
+
+}
+

@@ -1,0 +1,120 @@
+html {
+  font-family: "Work Sans";
+}
+
+header {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+header div {
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+header div img {
+  height: 1.5rem;
+}
+header div p {
+  width: 20%;
+  margin-left: 5px;
+}
+header nav {
+  height: 5vh;
+  margin-right: 50px;
+  display: flex;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+header nav ul li {
+  list-style: none;
+  color: purple;
+  font-style: initial;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+
+h1 {
+  margin-left: 20px;
+}
+
+h2 {
+  margin-left: 20px;
+  font-size: medium;
+}
+
+.all-in {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 180px;
+  height: 30px;
+  background-color: black;
+}
+.all-in img {
+  width: 25px;
+  position: relative;
+  top: 5px;
+}
+.all-in a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  bottom: 3px;
+  margin-left: 5px;
+}
+
+.cards > a {
+  color: lightgray;
+  text-shadow: 1px 1px gray;
+  text-decoration: none;
+}
+
+.cards {
+  margin: 20px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.cards .article-1 img:first-child {
+  width: 380px;
+  height: 400px;
+}
+.cards .article-1 img:last-child {
+  width: 25px;
+  background-color: whitesmoke;
+  border: 2px solid lightgray;
+  border-radius: 50%;
+}
+.cards .article-2 img:first-child {
+  width: 380px;
+  height: 400px;
+}
+.cards .article-2 img:last-child {
+  width: 25px;
+  background-color: whitesmoke;
+  border: 2px solid lightgray;
+  border-radius: 50%;
+}
+.cards .article-3 img:first-child {
+  width: 380px;
+  height: 400px;
+}
+.cards .article-3 img:last-child {
+  width: 25px;
+  background-color: whitesmoke;
+  border: 2px solid lightgray;
+  border-radius: 50%;
+}
+
+footer {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  color: gray;
+}

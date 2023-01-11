@@ -1,0 +1,24 @@
+{
+  "name": "uib-framework-sassy-speaker-shop-tara025",
+  "version": "1.0.0",
+  "description": "Recreate the speaker-shop website, this time utilising sass and mixins. Make use of the boilerplate code in the index.html and the assets in the images folder.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass styles.scss styles.css --no-source-map --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/22-d08-a/uib-framework-sassy-speaker-shop-Tara025.git"
+  },
+  "author": "Peggy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/22-d08-a/uib-framework-sassy-speaker-shop-Tara025/issues"
+  },
+  "homepage": "https://github.com/22-d08-a/uib-framework-sassy-speaker-shop-Tara025#readme",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.57.1"
+  }
+}
